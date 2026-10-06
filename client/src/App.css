@@ -1,0 +1,55 @@
+i {
+  font-size: 2em;;
+}
+
+.homepage {
+  margin-top: 9em;
+}
+
+.card_immage {
+  max-width: 500px;
+  max-height: 300px;
+}
+
+.gameRecap {
+  min-width: 1600px;
+  max-width: 1600px;
+}
+
+.game_x_spacing {
+  margin-left: 20em;
+  margin-right: 20em;
+}
+
+.addCard_y_spacing {
+  height: 100%;
+  min-height: 11em;
+  cursor: pointer;
+}
+
+.addCard_y_spacing:hover {
+  border-color: rgb(0, 195, 255) !important;
+  color: rgb(0, 195, 255) !important;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15); 
+}
+
+.custom_max_width_recap {
+  max-width: 11.5em;
+}
+
+.border_profile {
+  border: 2px solid #d3d3d3;   /* Blue solid border */
+  border-radius: 10px;         /* Rounded corners */
+}
+
+.title-size  {
+  font-size: 1em;
+}
+
+.text-size  {
+  font-size: 0.8em;
+}
+
+.mt-10em {
+  margin-top: 7em;
+}

@@ -1,0 +1,83 @@
+# This file can be used for thesting the API with a dedicated Visual Studio Code extension.
+
+## Checking if user is still logged-in.
+POST http://localhost:3001/api/games
+content-type: application/json
+
+{
+  "cards": [
+    {
+      "id": 1,
+      "title": "Argument with coworker",
+      "image": "temp1.png",
+      "bad_index": 25,
+      "card_status": "initial"
+    },
+    {
+      "id": 3,
+      "title": "Lose your wallet",
+      "image": "temp3.png",
+      "bad_index": 37.5,
+      "card_status": "initial"
+    },
+    {
+      "id": 6,
+      "title": "Gain 10 kg",
+      "image": "temp6.png",
+      "bad_index": 40,
+      "card_status": "initial"
+    }
+  ]
+}
+
+###
+
+POST http://localhost:3001/api/cards/5/is_correct
+content-type: application/json
+
+{
+  "index": 1,
+  "cards": [
+    {
+      "id": 1,
+      "title": "Argument with coworker",
+      "image": "temp1.png",
+      "bad_index": 25,
+      "card_status": "initial"
+    },
+    {
+      "id": 3,
+      "title": "Lose your wallet",
+      "image": "temp3.png",
+      "bad_index": 37.5,
+      "card_status": "initial"
+    },
+    {
+      "id": 6,
+      "title": "Gain 10 kg",
+      "image": "temp6.png",
+      "bad_index": 40,
+      "card_status": "initial"
+    }
+  ]
+}
+
+###
+
+POST http://localhost:3001/api/games/3/cards
+content-type: application/json
+
+{
+    "id" : 5,
+    "index" : 1
+}
+###
+
+GET http://localhost:3001/api/users/1/games
+###
+
+GET http://localhost:3001/api/games/2/cards
+###
+
+GET http://localhost:3001/api/games/temp-game
+###
